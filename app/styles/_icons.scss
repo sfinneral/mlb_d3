@@ -1,0 +1,17 @@
+.icon {
+  font-family: $icon_font;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  float: left;
+  line-height: 1.2em;
+  margin-right:5px;
+}
+
+.icon--menu   { &:before  { content: "\e600";} }
+.icon--close  { &:before  { content: "\e601";} }
+.icon--rocket { &:before  { content: "\e602";} }
+.icon--toolbox { &:before { content: "\e603";} }

@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+/*------------------------------------*\
+    MAIN.CSS
+\*------------------------------------*/
+
+/**
+ * Base
+ */
+@import "normalize";
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "icons";
+@import "global";
+
+/**
+ * Project-specific components.
+ */
+@import "../components/navigation/navigation";
+
+/**
+ * Pages
+ */
+@import "../pages/home/home";

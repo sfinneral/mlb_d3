@@ -1,0 +1,13 @@
+
+<nav class="navigation">
+  <div class="content navigation__content">
+    <a href="/" class="logo"><span class="icon icon--toolbox"></span>Starter<span>kit</span></a>
+    <a href="#" class="menu_link  menu_link--open  menu_link--js_open"><span class="icon  icon--menu"></span></a>
+    <a href="#" class="menu_link  menu_link--close  menu_link--js_close"><span class="icon  icon--close"></span></a>
+    <ul>
+      {{#each navigation}}
+      <li class="navigation__item"><a href="{{link}}">{{text}}</a></li>
+      {{/each}}
+    </ul>
+  </div>
+</nav>

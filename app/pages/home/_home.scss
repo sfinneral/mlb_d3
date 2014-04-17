@@ -1,0 +1,21 @@
+$bp1: 320px;
+$bp2: 600px;
+$bp3: 1024px;
+
+.starterkit-logo {
+  text-align: center;
+  max-width: 100%;
+  margin: 20px auto;
+  display: block;
+}
+
+.home-page {
+  margin-top: 30px;
+}
+
+@include respond-to($bp2) {
+  .starterkit-logo {
+    float: right;
+    width: 300px;
+  }
+}

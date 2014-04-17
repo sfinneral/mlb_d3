@@ -1,0 +1,78 @@
+$bp1: 768px;
+
+.navigation {
+  overflow: auto;
+  position: relative;
+  background-color: $pri-color;
+  a {
+    display: block;
+    color: white;
+    text-decoration: none;
+  }
+  ul {
+    display: none;
+    margin: 0;
+    padding: 0;
+    clear: both;
+  }
+  .navigation__item {
+    list-style-type: none;
+    padding: 0;
+    @include rem(font-size,1.4);
+    &:last-of-type{
+      border-bottom: none;
+    }
+    a {
+      padding: 10px 0px;
+      color: lighten($pri-color,40%);
+      border-bottom: 1px solid lighten($pri-color,10%);
+    }
+  }
+  .icon {
+    color: lighten($pri-color,30%);
+    margin-right: 0;
+  }
+  .logo {
+    float: left;
+    padding: 10px 0;
+    text-transform: uppercase;
+    span{
+      color: lighten($pri-color,30%);
+    }
+  }
+  .icon--toolbox {
+    margin-right: 10px;
+  }
+  .menu_link {
+    float: right;
+    padding: 10px 0;
+  }
+  .menu_link--close {
+    display: none;
+  }
+  @include respond-to($bp1) {
+    ul {
+      float: right;
+      clear: none;
+      display: block;
+    }
+    .menu_link--open {
+      display: none;
+    }
+    .navigation__item {
+      float: left;
+      padding: 0 10px;
+      border-right: 1px solid lighten($pri-color,20%);
+      &:last-of-type{
+        border-right: none;
+      }
+      a {
+        border-bottom: none;
+        &:hover{
+          color: white;
+        }
+      }
+    }
+  }
+
+}
